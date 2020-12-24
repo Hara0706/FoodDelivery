@@ -1,0 +1,306 @@
+/* CSS Reset  */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables  */
+:root
+{
+    --navbar-height: 55px;
+}
+
+/* Navigation Bar  */
+#navbar
+{
+    display:flex;
+    align-items:center;
+}
+
+/* Navbar:Logo and Image  */
+#logo
+{
+    margin: 0px 0px;
+    line-height: 1px;
+    font-size:33px;
+    text-align: center;
+    font-family:'Baloo Bhai',cursive;
+    color:orange;
+   
+}
+#logo img
+{
+    margin: 0px 10px 10px px;
+    border: 4px solid orange;
+    border-radius:15px;
+}
+
+/* Navbar:List Styling  */
+#navbar::before
+{
+    content:"";
+    background: url('tikka.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:75%;
+    
+}
+#navbar ul 
+{
+      display: flex;
+      margin: 5px 10px 10px 360px;
+    
+}
+#navbar ul li
+{
+   list-style:none;
+   font-family:'Baloo Bhai',cursive;
+   font-size:24px; 
+}
+#navbar ul li a
+{
+    display:block;
+    padding: 3px 25px;
+    color:white;
+    border-radius:15px;
+    text-decoration:none;
+}
+#navbar ul li a:hover
+{
+    color:rgb(117, 114, 114);
+    background-color:rgb(202, 200, 200);
+}
+
+/* Home Section  */
+#home
+{
+    display:flex;
+    flex-direction: column;
+    padding:3px 250px;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    font-family:'Source Sans Pro',cursive;
+    height:220px;
+}
+#home h1
+{
+    color:rgb(61,60,60);
+    text-align: center;
+    font-size:40px;
+    font-weight:bold;
+    
+}
+#home p
+{
+    color:rgb(61, 60, 60);
+    text-align:center;
+    font-weight:bold;
+}
+
+/* Services Section  */
+#services-container
+{
+    background-color: peachpuff;
+}
+#services-container h1
+{
+    margin: 50px 0px -30px 0px;
+    text-align:center;
+    font-size:40px;
+    flex-direction:wrap;
+    color:rgb(219, 104, 62);
+    font-family:'Source Sans Pro',cursive;
+    font-weight: bolder;
+}
+#services1
+{
+    height:320px;
+    width:280px;
+    margin: 100px 0px 0px 40px;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding:20px 75px 55px 75px;
+    border:4px solid green;
+    border-radius:25px;
+    background-color: rgb(199, 241, 215);
+    font-size:18px;
+    font-family:'Slabo 27px',cursive;
+    
+   
+}
+#services2
+{
+    height:320px;
+    width:280px;
+    margin: -403px 0px 10px 525px;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding:20px 75px 55px 75px;
+    border:4px solid green;
+    border-radius:25px;
+    background-color: rgb(199, 241, 215);
+    font-size:18px;
+    font-family:'Slabo 27px',cursive;
+   
+}
+#services3
+{
+    height:320px;
+    width:280px;
+    margin: -413px 50px 20px 1005px;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    padding:20px 75px 55px 75px;
+    border:4px solid green;
+    border-radius:25px;
+    background-color: rgb(199, 241, 215);
+    font-size:18px;
+    font-family:'Slabo 27px',cursive;
+}
+
+/* Clients Section  */
+#client-section h1
+{
+    height:35px;
+    padding: 45px 180px 45px 0px;
+    font-family:'Baloo Bhai',cursive;
+    font-size:40px;
+    color:rgb(248, 247, 247);
+    justify-content: center;
+    margin:0px -390px 0px -50px;
+}
+#client-section
+{
+    display:flex;
+    height:150px;
+    justify-content: center;
+    background:url('chickenback.jpg');
+    position:absolute;
+    height: 60%;
+    width: 100%;
+    z-index:-1;
+    opacity:80%;
+}
+
+
+#client2
+{
+    margin: 160px 10px 0px -400px;
+    
+}
+#client3
+{
+    margin: 165px -40px 0px 150px;
+    
+}
+#client4
+{
+    margin: 155px -20px 0px 180px;
+    
+}
+#client5
+{
+    margin: 160px -520px 0px 180px;
+    
+}
+
+/* Contact Section  */
+#contact
+{
+    position:relative;
+    margin:480px 0px 0px 0px;
+}
+#contact::before
+{
+    content: "";
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:60%;
+    background:url('contact.jpg') no-repeat center center/cover;
+
+}
+#contact h1
+{
+    font-size:40px;
+    font-family:'Baloo Bhai',cursive;
+    color:rgb(58, 57, 57);
+}
+#contact-box
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:34px;
+}
+#contact-box form
+{
+    width:40%;
+}
+#contact-box label
+{
+    font-size:18px;
+    font-weight: bold;
+    font-family:'Slabo 27px',cursive;
+
+}
+#contact-box input,
+#contact-box textarea
+{
+    width:100%;
+    padding:8px 0px 8px 8px;
+    margin:8px 0px 8px 8px;
+    border-radius:10px;
+    font-size:18px;
+}
+
+footer
+{
+    margin:10px 3px ;
+    background:black;
+    color:white;
+    padding:10px 100px;
+}
+
+/* Utility Classes  */
+.h-primary
+{
+    font-size:30px;
+    padding:12px;
+}
+.h-secondary
+{
+    font-size: 25px;
+    padding:8px;
+    text-align: center;
+    
+}
+.center
+{
+    text-align:center;
+}
+.btn
+{
+    margin: 15px 5px;
+    font-family:'Source Sans Pro',cursive;
+    background-color:rgb(170, 169, 169);
+    color:rgb(102, 101, 101);
+    padding: 4px 10px 4px 10px;
+    font-size:18px;
+    border-radius:7px;
+    cursor:pointer;
+
+}
+.btn:hover
+{
+    background-color: rgb(223, 219, 219);
+}
+
